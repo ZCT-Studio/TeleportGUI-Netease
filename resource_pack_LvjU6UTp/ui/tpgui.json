@@ -1,0 +1,834 @@
+{
+  "namespace": "tpgui",
+  "hud": {
+    "type": "screen",
+    "controls": [
+      {
+        "root": {
+          "type": "panel",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "open@common.button": {
+                "size": [
+                  80,
+                  24
+                ],
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [
+                  -90,
+                  10
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "TPGUI",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "notice": {
+                "type": "label",
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "offset": [
+                  -220,
+                  0
+                ],
+                "size": [
+                  180,
+                  18
+                ],
+                "text": "",
+                "layer": 5,
+                "color": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "accept@common.button": {
+                "size": [
+                  80,
+                  22
+                ],
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "offset": [
+                  -190,
+                  24
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Accept",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "deny@common.button": {
+                "size": [
+                  80,
+                  22
+                ],
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "offset": [
+                  -105,
+                  24
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Deny",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "menu": {
+    "type": "screen",
+    "controls": [
+      {
+        "root": {
+          "type": "panel",
+          "size": [
+            360,
+            280
+          ],
+          "controls": [
+            {
+              "background": {
+                "type": "image",
+                "texture": "textures/ui/Black",
+                "alpha": 0.9,
+                "size": [
+                  360,
+                  280
+                ],
+                "layer": 0
+              }
+            },
+            {
+              "title": {
+                "type": "label",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  16,
+                  12
+                ],
+                "size": [
+                  220,
+                  18
+                ],
+                "text": "TeleportGUI",
+                "layer": 5,
+                "color": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "close@common.button": {
+                "size": [
+                  28,
+                  22
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  320,
+                  8
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "X",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "homes@common.button": {
+                "size": [
+                  100,
+                  24
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  42
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Homes",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "warps@common.button": {
+                "size": [
+                  100,
+                  24
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  122,
+                  42
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Warps",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "players@common.button": {
+                "size": [
+                  100,
+                  24
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  232,
+                  42
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "TPA",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "input": {
+                "type": "edit_box",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  72
+                ],
+                "size": [
+                  200,
+                  24
+                ],
+                "layer": 3
+              }
+            },
+            {
+              "add@common.button": {
+                "size": [
+                  60,
+                  24
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  220,
+                  72
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Add",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "back@common.button": {
+                "size": [
+                  60,
+                  24
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  285,
+                  72
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "Back",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "status": {
+                "type": "label",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  260
+                ],
+                "size": [
+                  320,
+                  18
+                ],
+                "text": "",
+                "layer": 5,
+                "color": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "row0@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  102
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "row1@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  127
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "row2@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  152
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "row3@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  177
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "row4@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  202
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "row5@common.button": {
+                "size": [
+                  333,
+                  23
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  12,
+                  227
+                ],
+                "button_mappings": [],
+                "controls": [
+                  {
+                    "default": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_light"
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lighthover"
+                    }
+                  },
+                  {
+                    "pressed": {
+                      "type": "image",
+                      "texture": "textures/ui/button_borderless_lightpressed"
+                    }
+                  },
+                  {
+                    "button_label": {
+                      "type": "label",
+                      "text": "",
+                      "layer": 3,
+                      "color": [
+                        0.1,
+                        0.1,
+                        0.1
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
