@@ -9,5 +9,8 @@
             "duration": 10
         },
         "PresetInstanceTreeData": []
+    },
+    "UI": {
+        "customPrefabGroupExpand": []
     }
 }

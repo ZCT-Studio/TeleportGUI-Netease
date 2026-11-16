@@ -9,6 +9,7 @@ class TeleportClient(ClientSystem):
         self.ListenForEvent(clientApi.GetEngineNamespace(), clientApi.GetEngineSystemName(), 'UiInitFinished', self, self.on_ui_init)
         self.ListenForEvent('TeleportGUI', 'server', 'Result', self, self.on_result)
         self.ListenForEvent('TeleportGUI', 'server', 'Request', self, self.on_request)
+        self.ListenForEvent('TeleportGUI', 'server', 'Risk', self, self.on_risk)
         self.menu = None
         self.hud = None
 
@@ -28,9 +29,13 @@ class TeleportClient(ClientSystem):
     def on_result(self, args):
         if self.menu:
             self.menu.receive(args)
-        if self.hud and args.get('status') != 'ok':
+        if self.hud and args.get('action') != 'list':
             self.hud.notify(args.get('status', 'error'))
 
     def on_request(self, args):
         if self.hud:
             self.hud.request(args)
+
+    def on_risk(self, args):
+        if self.hud:
+            self.hud.risk(args)
