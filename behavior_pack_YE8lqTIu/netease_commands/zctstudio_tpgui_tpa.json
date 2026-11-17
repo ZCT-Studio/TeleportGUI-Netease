@@ -1,0 +1,13 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpa",
+  "description": "传送视窗：tpa",
+  "permission_level": "any",
+  "args": [
+    {
+      "name": "玩家",
+      "type": "str",
+      "default": null
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-    "Arena.Component.Namespace": "zctstudio_teleportgui",
-    "FirstTabSetting": 1,
-    "ShortItemSettings": [
-        "resource_pack_LvjU6UTp\\textures"
-    ],
-    "Uluru.autoLayerDict": {},
-    "Uluru.checkSuspectOldUI": true
+  "Arena.Component.Namespace": "zctstudio_teleportgui",
+  "FirstTabSetting": 1,
+  "ShortItemSettings": [
+    "resource_pack_LvjU6UTp\\textures"
+  ],
+  "Uluru.autoLayerDict": {},
+  "Uluru.checkSuspectOldUI": true
 }

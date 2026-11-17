@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
+# SPDX-FileCopyrightText: ZCT Studio
+# SPDX-License-Identifier: GPL-3.0-only
 """Platform-independent rules for named teleport locations and requests."""
 import time
 
 MAX_NAME_LENGTH = 32
 
+
 def valid_name(name):
-    return isinstance(name, (str, type(u''))) and 0 < len(name.strip()) <= MAX_NAME_LENGTH and not any(ord(c) < 32 for c in name)
+    return isinstance(name, (str, type(u''))) and 0 < len(name.strip()) <= MAX_NAME_LENGTH and not any(
+        ord(c) < 32 for c in name)
+
 
 class Locations(object):
     def __init__(self, data=None):
@@ -38,6 +43,7 @@ class Locations(object):
             return 'missing'
         del self.data[name]
         return 'ok'
+
 
 class Requests(object):
     def __init__(self, lifetime=120, clock=None):

@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
-DEFAULTS = {'home_limit': 10, 'warp_limit': 100, 'cooldown': 3, 'request_lifetime': 120, 'random_radius': 1000, 'safety_check': True}
-LIMITS = {'home_limit': (1, 1000), 'warp_limit': (1, 10000), 'cooldown': (0, 3600), 'request_lifetime': (10, 600), 'random_radius': (16, 10000)}
-LABELS = {'home_limit': u'每人家园上限', 'warp_limit': u'公共传送点上限', 'cooldown': u'传送冷却（秒）', 'request_lifetime': u'请求有效期（秒）', 'random_radius': u'随机传送范围（格）', 'safety_check': u'安全检查'}
+# SPDX-FileCopyrightText: ZCT Studio
+# SPDX-License-Identifier: GPL-3.0-only
+DEFAULTS = {'home_limit': 10, 'warp_limit': 20, 'cooldown': 3, 'request_lifetime': 60, 'random_radius': 0,
+            'safety_check': True}
+LIMITS = {'home_limit': (0, 1000), 'warp_limit': (0, 10000), 'cooldown': (0, 3600), 'request_lifetime': (10, 600),
+          'random_radius': (0, 10000)}
+LABELS = {'home_limit': u'每人家园上限', 'warp_limit': u'公共传送点上限', 'cooldown': u'主动操作冷却（秒）',
+          'request_lifetime': u'请求有效期（秒）', 'random_radius': u'随机传送范围（格）', 'safety_check': u'安全检查'}
+
 
 def validate(key, value):
     if key == 'safety_check':
@@ -16,3 +22,8 @@ def validate(key, value):
         return None
     low, high = LIMITS[key]
     return value if low <= value <= high else None
+
+
+POPUP_POSITIONS = ('left_middle', 'top_left', 'top_middle', 'top_right', 'right_middle', 'bottom_right', 'bottom_left')
+POPUP_LABELS = {'left_middle': u'左居中', 'top_left': u'左上角', 'top_middle': u'上居中', 'top_right': u'右上角',
+                'right_middle': u'右居中', 'bottom_right': u'右下角', 'bottom_left': u'左下角'}

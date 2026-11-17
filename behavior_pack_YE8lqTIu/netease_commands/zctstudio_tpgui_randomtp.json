@@ -1,0 +1,7 @@
+{
+  "format_version": "0.0.1",
+  "name": "randomtp",
+  "description": "传送视窗：randomtp",
+  "permission_level": "any",
+  "args": []
+}

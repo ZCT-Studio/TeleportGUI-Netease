@@ -1,0 +1,23 @@
+{
+  "format_version": "0.0.1",
+  "name": "warp",
+  "description": "传送视窗：warp",
+  "permission_level": "any",
+  "args": [
+    {
+      "name": "操作",
+      "type": "str",
+      "default": null
+    },
+    {
+      "name": "名称",
+      "type": "str",
+      "default": null
+    },
+    {
+      "name": "新名称",
+      "type": "str",
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "0.0.1",
+  "name": "teleportgui_be",
+  "description": "传送视窗：teleportgui_be",
+  "permission_level": "any",
+  "args": [
+    {
+      "name": "操作",
+      "type": "str",
+      "default": null
+    },
+    {
+      "name": "值",
+      "type": "str",
+      "default": null
+    }
+  ]
+}

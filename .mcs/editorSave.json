@@ -1,16 +1,16 @@
 {
-    "Addon": {
-        "EnchantSetting": {
-            "amplifier": 1
-        },
-        "PackResourceSortData": {},
-        "PlayerEffectSetting": {
-            "amplifier": 1,
-            "duration": 10
-        },
-        "PresetInstanceTreeData": []
+  "Addon": {
+    "EnchantSetting": {
+      "amplifier": 1
     },
-    "UI": {
-        "customPrefabGroupExpand": []
-    }
+    "PackResourceSortData": {},
+    "PlayerEffectSetting": {
+      "amplifier": 1,
+      "duration": 10
+    },
+    "PresetInstanceTreeData": []
+  },
+  "UI": {
+    "customPrefabGroupExpand": []
+  }
 }

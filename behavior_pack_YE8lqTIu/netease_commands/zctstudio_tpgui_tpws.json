@@ -1,0 +1,7 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpws",
+  "description": "传送视窗：tpws",
+  "permission_level": "any",
+  "args": []
+}

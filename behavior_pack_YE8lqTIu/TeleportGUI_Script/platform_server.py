@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+# SPDX-FileCopyrightText: ZCT Studio
+# SPDX-License-Identifier: GPL-3.0-only
 """Server-side persistence and player position adapters for ModSDK."""
 import mod.server.extraServerApi as serverApi
 
 DATA_KEY = 'zctstudio_teleportgui_v1'
+
 
 class WorldStore(object):
     def __init__(self):
@@ -10,13 +13,16 @@ class WorldStore(object):
         loaded = self.component.GetExtraData(DATA_KEY)
         if loaded is None:
             self.data = {'version': 1, 'players': {}, 'warps': {}}
-        elif isinstance(loaded, dict) and loaded.get('version') == 1 and isinstance(loaded.get('players'), dict) and isinstance(loaded.get('warps'), dict):
+        elif isinstance(loaded, dict) and loaded.get('version') == 1 and isinstance(loaded.get('players'),
+                                                                                    dict) and isinstance(
+                loaded.get('warps'), dict):
             self.data = loaded
         else:
             raise ValueError('Unsupported or malformed TeleportGUI world data')
 
     def save(self):
         return self.component.SetExtraData(DATA_KEY, self.data)
+
 
 class PlayerPositions(object):
     def __init__(self):

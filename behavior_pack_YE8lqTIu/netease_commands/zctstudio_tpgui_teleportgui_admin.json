@@ -1,0 +1,23 @@
+{
+  "format_version": "0.0.1",
+  "name": "teleportgui_admin",
+  "description": "传送视窗：teleportgui_admin",
+  "permission_level": "any",
+  "args": [
+    {
+      "name": "操作",
+      "type": "str",
+      "default": null
+    },
+    {
+      "name": "配置项",
+      "type": "str",
+      "default": null
+    },
+    {
+      "name": "值",
+      "type": "str",
+      "default": null
+    }
+  ]
+}

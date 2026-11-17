@@ -1,0 +1,7 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpworldspawn",
+  "description": "传送视窗：tpworldspawn",
+  "permission_level": "any",
+  "args": []
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpay",
+  "description": "传送视窗：tpay",
+  "permission_level": "any",
+  "args": [
+    {
+      "name": "玩家",
+      "type": "str",
+      "default": null
+    }
+  ]
+}

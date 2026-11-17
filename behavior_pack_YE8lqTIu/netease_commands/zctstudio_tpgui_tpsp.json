@@ -1,0 +1,7 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpsp",
+  "description": "传送视窗：tpsp",
+  "permission_level": "any",
+  "args": []
+}

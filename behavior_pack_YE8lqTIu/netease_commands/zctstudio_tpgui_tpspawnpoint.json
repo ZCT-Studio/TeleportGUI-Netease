@@ -1,0 +1,7 @@
+{
+  "format_version": "0.0.1",
+  "name": "tpspawnpoint",
+  "description": "传送视窗：tpspawnpoint",
+  "permission_level": "any",
+  "args": []
+}
